@@ -69,8 +69,8 @@ class Login extends Component {
         axios
             .post('https://lotut.herokuapp.com/api/login', this.state)
             .then(res => {
-                console.log(res.data);
-                // localStorage.removeItem('jwt');
+                console.log(res.data.key);
+                localStorage.removeItem('key');
                 localStorage.setItem('key', res.data.key);
                 // if (this.state.password != ''){
                 this.props.history.push('/game')
