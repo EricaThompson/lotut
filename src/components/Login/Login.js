@@ -61,7 +61,7 @@ class Login extends Component {
         event.preventDefault();  
         
         if(this.state.username === '' || this.state.password === ''){
-            localStorage.removeItem('jwt');
+            localStorage.removeItem('key');
             return;
         }
         

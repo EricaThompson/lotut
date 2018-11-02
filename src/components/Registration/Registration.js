@@ -80,7 +80,7 @@ class Registration extends Component {
 
     
             axios
-                .post('http://localhost:8000/api/registration', this.state)
+                .post('https://lotut.herokuapp.com/api/registration', this.state)
                 .then(res => {
                     // localStorage.removeItem('jwt');
                     console.log(res.data.key);
